@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Batman Logo Test</title>
+    <style>
+        body {
+            background: #000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+        
+        .batman-logo {
+            width: 300px;
+            height: 150px;
+            position: relative;
+        }
+        
+        .batman-logo svg {
+            width: 100%;
+            height: 100%;
+            filter: drop-shadow(0 0 20px rgba(255, 215, 0, 0.5));
+        }
+    </style>
+</head>
+<body>
+    <div class="batman-logo">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 120">
+            <!-- Outer black border -->
+            <ellipse cx="120" cy="60" rx="118" ry="58" fill="black"/>
+            <!-- Yellow fill -->
+            <ellipse cx="120" cy="60" rx="115" ry="55" fill="#ffd700"/>
+            <!-- Bat symbol -->
+            <path d="
+                M 120 25
+                C 115 25, 110 30, 105 35
+                L 85 35 
+                C 75 35, 65 40, 55 45
+                L 40 60
+                C 55 70, 65 75, 85 75
+                L 105 75
+                C 110 80, 115 90, 120 95
+                C 125 90, 130 80, 135 75
+                L 155 75
+                C 175 75, 185 70, 200 60
+                L 185 45
+                C 175 40, 165 35, 155 35
+                L 135 35
+                C 130 30, 125 25, 120 25
+                Z" 
+                fill="black"/>
+        </svg>
+    </div>
+</body>
+</html>

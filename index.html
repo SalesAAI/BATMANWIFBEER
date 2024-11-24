@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BATMANWIFBEER</title>
+    <!-- Load Three.js first -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.159.0/three.min.js"></script>
+    <!-- Load GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <!-- Load fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Background canvases -->
+    <canvas id="backgroundEffect"></canvas>
+    
+    <!-- Main content -->
+    <div class="content-wrapper">
+        <header class="main-header">
+            <nav class="nav-menu">
+                <div class="nav-links">
+                    <a href="#story" class="nav-link">Story</a>
+                    <a href="#mission" class="nav-link">Mission</a>
+                    <a href="#beers" class="nav-link">Beers</a>
+                    <a href="#buy" class="nav-link">How to Buy</a>
+                    <a href="#token" class="nav-link">$BATMANWIFBEER</a>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+            <section id="hero" class="hero-section">
+                <div class="hero-content">
+                    <div class="batman-logo-3d">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 120">
+                            <ellipse cx="120" cy="60" rx="118" ry="58" fill="black"/>
+                            <ellipse cx="120" cy="60" rx="115" ry="55" fill="#ffd700"/>
+                            <path d="M120 25 L95 45 L65 45 L40 60 L65 75 L95 75 L120 95 L145 75 L175 75 L200 60 L175 45 L145 45 L120 25Z" fill="black"/>
+                        </svg>
+                    </div>
+                    <h1 class="glitch-text">BATMANWIFBEER</h1>
+                    <p class="hero-tagline">Even heroes need a break</p>
+                    <div class="cta-buttons">
+                        <a href="#buy" class="cta-button primary">Buy Now</a>
+                        <a href="#about" class="cta-button secondary">Learn More</a>
+                    </div>
+                </div>
+            </section>
+
+            <section id="story" class="section">
+                <div class="section-inner">
+                    <h2 class="section-title">The Story</h2>
+                    <p>After years of protecting Gotham, even the Dark Knight needs to unwind. BATMANWIFBEER captures that rare moment when Batman takes a break, reminding us that heroes are human too.</p>
+                </div>
+            </section>
+
+            <section id="mission" class="section">
+                <div class="section-inner">
+                    <h2 class="section-title">Our Mission</h2>
+                    <p>To bring justice to DeFi while maintaining a sense of humor. We're building a community that combines the dedication of Batman with the joy of sharing a cold one.</p>
+                </div>
+            </section>
+
+            <section id="beers" class="section">
+                <div class="section-inner">
+                    <h2 class="section-title">Our Beers</h2>
+                    <div class="tokenomics-grid">
+                        <div class="token-stat">
+                            <h3>Gotham Dark Ale</h3>
+                            <p>As dark as Batman's cape, as bold as his spirit</p>
+                        </div>
+                        <div class="token-stat">
+                            <h3>Batcave Brew</h3>
+                            <p>A secret blend of hops and mystery</p>
+                        </div>
+                        <div class="token-stat">
+                            <h3>Justice Served IPA</h3>
+                            <p>Heroically hoppy with a powerful finish</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="buy" class="section">
+                <div class="section-inner">
+                    <h2 class="section-title">How to Buy</h2>
+                    <div class="steps-container">
+                        <div class="step-card">
+                            <div class="step-number">01</div>
+                            <h3>Create Wallet</h3>
+                            <p>Download MetaMask or Trust Wallet</p>
+                        </div>
+                        <div class="step-card">
+                            <div class="step-number">02</div>
+                            <h3>Get ETH</h3>
+                            <p>Buy ETH from your preferred exchange</p>
+                        </div>
+                        <div class="step-card">
+                            <div class="step-number">03</div>
+                            <h3>Connect Wallet</h3>
+                            <p>Connect to Uniswap or PancakeSwap</p>
+                        </div>
+                        <div class="step-card">
+                            <div class="step-number">04</div>
+                            <h3>Swap</h3>
+                            <p>Swap ETH for $BATMANWIFBEER</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="token" class="section">
+                <div class="section-inner">
+                    <h2 class="section-title">$BATMANWIFBEER</h2>
+                    <div class="tokenomics-grid">
+                        <div class="token-stat">
+                            <div class="stat-value">1M</div>
+                            <div class="stat-label">Total Supply</div>
+                        </div>
+                        <div class="token-stat">
+                            <div class="stat-value">1%</div>
+                            <div class="stat-label">Transaction Tax</div>
+                        </div>
+                        <div class="token-stat">
+                            <div class="stat-value">100%</div>
+                            <div class="stat-label">LP Locked</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="main-footer">
+            <div class="footer-content">
+                <div class="social-links">
+                    <a href="#" class="social-link">Twitter</a>
+                    <a href="#" class="social-link">Telegram</a>
+                    <a href="#" class="social-link">Discord</a>
+                </div>
+                <p class="copyright">© 2024 BATMANWIFBEER. Not affiliated with DC Comics.</p>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Load scripts -->
+    <script src="background.js"></script>
+    <script src="animations.js"></script>
+    
+    <!-- Initialize everything after DOM is loaded -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            console.log('Initializing background...');
+            if (typeof initBackground === 'function') {
+                initBackground();
+            }
+            console.log('Initializing animations...');
+            if (typeof initAnimations === 'function') {
+                initAnimations();
+            }
+        });
+    </script>
+</body>
+</html>
